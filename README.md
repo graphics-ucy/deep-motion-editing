@@ -1,7 +1,16 @@
-# Deep-motion-editing
-
+# Deep-motion-editing (Fork)
 ![Python](https://img.shields.io/badge/Python->=3.7-Blue?logo=python)  ![Pytorch](https://img.shields.io/badge/PyTorch->=1.5.0-Red?logo=pytorch)
 ![Blender](https://img.shields.io/badge/Blender-%3E=2.8-Orange?logo=blender)
+
+## In this ✨fork✨, we handle animation files in batches:
+1. batch_scene.sh _(uses multi_bvh_import.py)_
+2. batch_color.sh _(uses color_figures.py)_
+3. batch_position.sh _(uses positioning_figures.py)_
+
+_Please modify the above files to your needs!_
+
+-------------
+
 
 This library provides fundamental and advanced functions to work with 3D character animation in deep learning with Pytorch. The code contains end-to-end modules, from reading and editing animation files to visualizing and rendering (using Blender) them.
 
