@@ -60,10 +60,11 @@ def add_rendering_parameters(scene, args, camera):
     return scene
 
 
-def add_material_for_character(objs):
+def add_material_for_character(objs, bvh_name=""):
     char_mat = bpy.data.materials.new(name="characterMaterial")
     char_mat.use_nodes = True
     bsdf = char_mat.node_tree.nodes["Principled BSDF"]
     bsdf.inputs[0].default_value = (0.021219, 0.278894, 1, 1)   # character material color
     for obj in objs:
         obj.data.materials.append(char_mat)
+        obj.name = "%s_%s" % (obj.name, bvh_name)

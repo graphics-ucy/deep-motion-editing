@@ -18,5 +18,5 @@ if __name__ == '__main__':
 
     add_rendering_parameters(bpy.context.scene, args, scene[1])
 
-    if args.render:
-        bpy.ops.render.render(animation=True, use_viewport=True)
+#    if args.render:
+#        bpy.ops.render.render(animation=True, use_viewport=True)
