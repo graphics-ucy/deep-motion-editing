@@ -3,6 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Blender
+2.93/
+lib/
+blender
+
 # C extensions
 *.so
 
